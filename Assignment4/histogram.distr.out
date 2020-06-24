@@ -1,0 +1,1208 @@
+myHadoop: Setting MH_IPOIB_TRANSFORM='s/\([^.]*\).*$/\1.ibnet/' from myhadoop.conf
+myHadoop: Setting MH_SCRATCH_DIR=/scratch/$USER/$SLURM_JOBID from myhadoop.conf
+myHadoop: Using HADOOP_HOME=/opt/hadoop/2.6.0
+myHadoop: Using MH_SCRATCH_DIR=/scratch/sxr3297/32342646
+myHadoop: Using JAVA_HOME=/lib/jvm/java
+myHadoop: Generating Hadoop configuration in directory in /home/sxr3297/cometcluster...
+myHadoop: Backing up old config dir to /home/sxr3297/cometcluster.12...
+‘/home/sxr3297/cometcluster’ -> ‘/home/sxr3297/cometcluster.12’
+myHadoop: Designating comet-27-19.ibnet as master node (namenode, secondary namenode, and jobtracker)
+myHadoop: The following nodes will be slaves (datanode, tasktracer):
+comet-27-19.ibnet
+comet-27-30.ibnet
+20/03/30 16:32:58 INFO namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = comet-27-19.sdsc.edu/198.202.117.195
+STARTUP_MSG:   args = [-format]
+STARTUP_MSG:   version = 2.6.0
+STARTUP_MSG:   classpath = /home/sxr3297/cometcluster:/opt/hadoop/2.6.0/share/hadoop/common/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/avro-1.7.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-math3-3.1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/api-util-1.0.0-M20.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/activation-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/xmlenc-0.52.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hamcrest-core-1.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hadoop-annotations-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/api-asn1-api-1.0.0-M20.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsp-api-2.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-el-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-digester-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/slf4j-api-1.7.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-framework-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/httpclient-4.2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/paranamer-2.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jasper-runtime-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsch-0.1.42.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/java-xmlbuilder-0.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-json-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/mockito-all-1.8.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-client-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jets3t-0.9.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jasper-compiler-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-configuration-1.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-recipes-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-net-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-collections-3.2.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/junit-4.11.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-httpclient-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jettison-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/zookeeper-3.4.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/htrace-core-3.0.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hadoop-auth-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/stax-api-1.0-2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/gson-2.2.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/apacheds-i18n-2.0.0-M15.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/httpcore-4.2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-nfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-common-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jsp-api-2.1.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-el-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jasper-runtime-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xercesImpl-2.9.1.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xml-apis-1.3.04.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/htrace-core-3.0.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-nfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/activation-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jline-0.9.94.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/aopalliance-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guice-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/javax.inject-1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-client-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-json-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-collections-3.2.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-httpclient-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jettison-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-api-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-client-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-registry-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-tests-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/leveldbjni-all-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/hadoop-annotations-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/guice-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/javax.inject-1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/junit-4.11.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.6.0-tests.jar:/opt/hadoop/2.6.0/contrib/capacity-scheduler/*.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1; compiled by 'jenkins' on 2014-11-13T21:10Z
+STARTUP_MSG:   java = 1.8.0_212
+************************************************************/
+20/03/30 16:32:58 INFO namenode.NameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+20/03/30 16:32:58 INFO namenode.NameNode: createNameNode [-format]
+20/03/30 16:32:58 WARN common.Util: Path /scratch/sxr3297/32342646/namenode_data should be specified as a URI in configuration files. Please update hdfs configuration.
+20/03/30 16:32:58 WARN common.Util: Path /scratch/sxr3297/32342646/namenode_data should be specified as a URI in configuration files. Please update hdfs configuration.
+Formatting using clusterid: CID-d92ca9c0-40ee-4451-9441-edc0fe30da92
+20/03/30 16:32:59 INFO namenode.FSNamesystem: No KeyProvider found.
+20/03/30 16:32:59 INFO namenode.FSNamesystem: fsLock is fair:true
+20/03/30 16:32:59 INFO blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
+20/03/30 16:32:59 INFO blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+20/03/30 16:32:59 INFO blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+20/03/30 16:32:59 INFO blockmanagement.BlockManager: The block deletion will start around 2020 Mar 30 16:32:59
+20/03/30 16:32:59 INFO util.GSet: Computing capacity for map BlocksMap
+20/03/30 16:32:59 INFO util.GSet: VM type       = 64-bit
+20/03/30 16:32:59 INFO util.GSet: 2.0% max memory 889 MB = 17.8 MB
+20/03/30 16:32:59 INFO util.GSet: capacity      = 2^21 = 2097152 entries
+20/03/30 16:32:59 INFO blockmanagement.BlockManager: dfs.block.access.token.enable=false
+20/03/30 16:32:59 INFO blockmanagement.BlockManager: defaultReplication         = 3
+20/03/30 16:32:59 INFO blockmanagement.BlockManager: maxReplication             = 512
+20/03/30 16:32:59 INFO blockmanagement.BlockManager: minReplication             = 1
+20/03/30 16:32:59 INFO blockmanagement.BlockManager: maxReplicationStreams      = 2
+20/03/30 16:32:59 INFO blockmanagement.BlockManager: shouldCheckForEnoughRacks  = false
+20/03/30 16:32:59 INFO blockmanagement.BlockManager: replicationRecheckInterval = 3000
+20/03/30 16:32:59 INFO blockmanagement.BlockManager: encryptDataTransfer        = false
+20/03/30 16:32:59 INFO blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+20/03/30 16:32:59 INFO namenode.FSNamesystem: fsOwner             = sxr3297 (auth:SIMPLE)
+20/03/30 16:32:59 INFO namenode.FSNamesystem: supergroup          = supergroup
+20/03/30 16:32:59 INFO namenode.FSNamesystem: isPermissionEnabled = true
+20/03/30 16:32:59 INFO namenode.FSNamesystem: HA Enabled: false
+20/03/30 16:32:59 INFO namenode.FSNamesystem: Append Enabled: true
+20/03/30 16:32:59 INFO util.GSet: Computing capacity for map INodeMap
+20/03/30 16:32:59 INFO util.GSet: VM type       = 64-bit
+20/03/30 16:32:59 INFO util.GSet: 1.0% max memory 889 MB = 8.9 MB
+20/03/30 16:32:59 INFO util.GSet: capacity      = 2^20 = 1048576 entries
+20/03/30 16:32:59 INFO namenode.NameNode: Caching file names occuring more than 10 times
+20/03/30 16:32:59 INFO util.GSet: Computing capacity for map cachedBlocks
+20/03/30 16:32:59 INFO util.GSet: VM type       = 64-bit
+20/03/30 16:32:59 INFO util.GSet: 0.25% max memory 889 MB = 2.2 MB
+20/03/30 16:32:59 INFO util.GSet: capacity      = 2^18 = 262144 entries
+20/03/30 16:32:59 INFO namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+20/03/30 16:32:59 INFO namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+20/03/30 16:32:59 INFO namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+20/03/30 16:32:59 INFO namenode.FSNamesystem: Retry cache on namenode is enabled
+20/03/30 16:32:59 INFO namenode.FSNamesystem: Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+20/03/30 16:32:59 INFO util.GSet: Computing capacity for map NameNodeRetryCache
+20/03/30 16:32:59 INFO util.GSet: VM type       = 64-bit
+20/03/30 16:32:59 INFO util.GSet: 0.029999999329447746% max memory 889 MB = 273.1 KB
+20/03/30 16:32:59 INFO util.GSet: capacity      = 2^15 = 32768 entries
+20/03/30 16:32:59 INFO namenode.NNConf: ACLs enabled? false
+20/03/30 16:32:59 INFO namenode.NNConf: XAttrs enabled? true
+20/03/30 16:32:59 INFO namenode.NNConf: Maximum size of an xattr: 16384
+20/03/30 16:32:59 INFO namenode.FSImage: Allocated new BlockPoolId: BP-56469781-198.202.117.195-1585611179211
+20/03/30 16:32:59 INFO common.Storage: Storage directory /scratch/sxr3297/32342646/namenode_data has been successfully formatted.
+20/03/30 16:32:59 INFO namenode.NNStorageRetentionManager: Going to retain 1 images with txid >= 0
+20/03/30 16:32:59 INFO util.ExitUtil: Exiting with status 0
+20/03/30 16:32:59 INFO namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at comet-27-19.sdsc.edu/198.202.117.195
+************************************************************/
+myHadoop:  
+myHadoop: Enabling experimental Spark support
+myHadoop: Using SPARK_CONF_DIR=/home/sxr3297/cometcluster/spark
+myHadoop:  
+To use Spark, you will want to type the following commands:"
+  source /home/sxr3297/cometcluster/spark/spark-env.sh
+  myspark start
+Starting namenodes on [comet-27-19.ibnet]
+comet-27-19.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+comet-27-19.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+comet-27-19.ibnet: starting namenode, logging to /scratch/sxr3297/32342646/logs/hadoop-sxr3297-namenode-comet-27-19.sdsc.edu.out
+comet-27-19.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+comet-27-19.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+comet-27-19.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+comet-27-19.ibnet: starting datanode, logging to /scratch/sxr3297/32342646/logs/hadoop-sxr3297-datanode-comet-27-19.sdsc.edu.out
+comet-27-19.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+comet-27-30.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+comet-27-30.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+comet-27-30.ibnet: starting datanode, logging to /scratch/sxr3297/32342646/logs/hadoop-sxr3297-datanode-comet-27-30.sdsc.edu.out
+comet-27-30.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+Starting secondary namenodes [comet-27-19.ibnet]
+comet-27-19.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+comet-27-19.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+comet-27-19.ibnet: starting secondarynamenode, logging to /scratch/sxr3297/32342646/logs/hadoop-sxr3297-secondarynamenode-comet-27-19.sdsc.edu.out
+comet-27-19.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+starting yarn daemons
+starting resourcemanager, logging to /scratch/sxr3297/32342646/logs/yarn-sxr3297-resourcemanager-comet-27-19.out
+comet-27-19.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+comet-27-19.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+comet-27-19.ibnet: starting nodemanager, logging to /scratch/sxr3297/32342646/logs/yarn-sxr3297-nodemanager-comet-27-19.sdsc.edu.out
+comet-27-19.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+comet-27-30.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+comet-27-30.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+comet-27-30.ibnet: starting nodemanager, logging to /scratch/sxr3297/32342646/logs/yarn-sxr3297-nodemanager-comet-27-30.sdsc.edu.out
+comet-27-30.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+mySpark: Using /home/sxr3297/cometcluster/spark/slaves as our slaves file
+mySpark: Reading in /home/sxr3297/cometcluster/spark/spark-env.sh as our slaves file
+starting org.apache.spark.deploy.master.Master, logging to /scratch/sxr3297/32342646/logs/spark-sxr3297-org.apache.spark.deploy.master.Master-1-comet-27-19.out
+mySpark: Starting worker on comet-27-19.ibnet:
+  /opt/spark/1.5.2/sbin/spark-daemon.sh --config /home/sxr3297/cometcluster/spark start org.apache.spark.deploy.worker.Worker 1 spark://comet-27-19.ibnet:7077
+/home/sxr3297/.bashrc: line 1: x#: command not found
+/home/sxr3297/.bashrc: line 1: x#: command not found
+starting org.apache.spark.deploy.worker.Worker, logging to /scratch/sxr3297/32342646/logs/spark-sxr3297-org.apache.spark.deploy.worker.Worker-1-comet-27-19.sdsc.edu.out
+mySpark: Starting worker on comet-27-30.ibnet:
+  /opt/spark/1.5.2/sbin/spark-daemon.sh --config /home/sxr3297/cometcluster/spark start org.apache.spark.deploy.worker.Worker 1 spark://comet-27-19.ibnet:7077
+/home/sxr3297/.bashrc: line 1: x#: command not found
+/home/sxr3297/.bashrc: line 1: x#: command not found
+starting org.apache.spark.deploy.worker.Worker, logging to /scratch/sxr3297/32342646/logs/spark-sxr3297-org.apache.spark.deploy.worker.Worker-1-comet-27-30.sdsc.edu.out
+20/03/30 16:33:31 INFO spark.SparkContext: Running Spark version 1.5.2
+20/03/30 16:33:32 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20/03/30 16:33:32 INFO spark.SecurityManager: Changing view acls to: sxr3297
+20/03/30 16:33:32 INFO spark.SecurityManager: Changing modify acls to: sxr3297
+20/03/30 16:33:32 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(sxr3297); users with modify permissions: Set(sxr3297)
+20/03/30 16:33:32 INFO slf4j.Slf4jLogger: Slf4jLogger started
+20/03/30 16:33:32 INFO Remoting: Starting remoting
+20/03/30 16:33:32 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriver@10.22.249.44:45717]
+20/03/30 16:33:32 INFO util.Utils: Successfully started service 'sparkDriver' on port 45717.
+20/03/30 16:33:32 INFO spark.SparkEnv: Registering MapOutputTracker
+20/03/30 16:33:32 INFO spark.SparkEnv: Registering BlockManagerMaster
+20/03/30 16:33:32 INFO storage.DiskBlockManager: Created local directory at /tmp/blockmgr-692957da-4758-406f-809c-77c76c9afb79
+20/03/30 16:33:32 INFO storage.MemoryStore: MemoryStore started with capacity 530.0 MB
+20/03/30 16:33:32 INFO spark.HttpFileServer: HTTP File server directory is /tmp/spark-dc849e5b-a978-49d0-9668-2d079827bb34/httpd-b3efe8f8-3392-436a-93b4-795781bf86fe
+20/03/30 16:33:32 INFO spark.HttpServer: Starting HTTP Server
+20/03/30 16:33:32 INFO server.Server: jetty-8.y.z-SNAPSHOT
+20/03/30 16:33:32 INFO server.AbstractConnector: Started SocketConnector@0.0.0.0:34851
+20/03/30 16:33:32 INFO util.Utils: Successfully started service 'HTTP file server' on port 34851.
+20/03/30 16:33:32 INFO spark.SparkEnv: Registering OutputCommitCoordinator
+20/03/30 16:33:32 INFO server.Server: jetty-8.y.z-SNAPSHOT
+20/03/30 16:33:32 INFO server.AbstractConnector: Started SelectChannelConnector@0.0.0.0:4040
+20/03/30 16:33:32 INFO util.Utils: Successfully started service 'SparkUI' on port 4040.
+20/03/30 16:33:32 INFO ui.SparkUI: Started SparkUI at http://10.22.249.44:4040
+20/03/30 16:33:32 INFO spark.SparkContext: Added JAR file:/home/sxr3297/project4/histogram.jar at http://10.22.249.44:34851/jars/histogram.jar with timestamp 1585611212969
+20/03/30 16:33:33 WARN metrics.MetricsSystem: Using default name DAGScheduler for source because spark.app.id is not set.
+20/03/30 16:33:33 INFO client.AppClient$ClientEndpoint: Connecting to master spark://comet-27-19.ibnet:7077...
+20/03/30 16:33:33 INFO cluster.SparkDeploySchedulerBackend: Connected to Spark cluster with app ID app-20200330163333-0000
+20/03/30 16:33:33 INFO client.AppClient$ClientEndpoint: Executor added: app-20200330163333-0000/0 on worker-20200330163321-10.22.249.44-42879 (10.22.249.44:42879) with 24 cores
+20/03/30 16:33:33 INFO cluster.SparkDeploySchedulerBackend: Granted executor ID app-20200330163333-0000/0 on hostPort 10.22.249.44:42879 with 24 cores, 1024.0 MB RAM
+20/03/30 16:33:33 INFO client.AppClient$ClientEndpoint: Executor added: app-20200330163333-0000/1 on worker-20200330163324-10.22.249.33-45384 (10.22.249.33:45384) with 24 cores
+20/03/30 16:33:33 INFO cluster.SparkDeploySchedulerBackend: Granted executor ID app-20200330163333-0000/1 on hostPort 10.22.249.33:45384 with 24 cores, 1024.0 MB RAM
+20/03/30 16:33:33 INFO client.AppClient$ClientEndpoint: Executor updated: app-20200330163333-0000/0 is now RUNNING
+20/03/30 16:33:33 INFO util.Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 35970.
+20/03/30 16:33:33 INFO netty.NettyBlockTransferService: Server created on 35970
+20/03/30 16:33:33 INFO storage.BlockManagerMaster: Trying to register BlockManager
+20/03/30 16:33:33 INFO storage.BlockManagerMasterEndpoint: Registering block manager 10.22.249.44:35970 with 530.0 MB RAM, BlockManagerId(driver, 10.22.249.44, 35970)
+20/03/30 16:33:33 INFO storage.BlockManagerMaster: Registered BlockManager
+20/03/30 16:33:33 INFO client.AppClient$ClientEndpoint: Executor updated: app-20200330163333-0000/0 is now LOADING
+20/03/30 16:33:33 INFO client.AppClient$ClientEndpoint: Executor updated: app-20200330163333-0000/1 is now RUNNING
+20/03/30 16:33:33 INFO client.AppClient$ClientEndpoint: Executor updated: app-20200330163333-0000/1 is now LOADING
+20/03/30 16:33:33 INFO cluster.SparkDeploySchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+20/03/30 16:33:33 INFO storage.MemoryStore: ensureFreeSpace(120176) called with curMem=0, maxMem=555755765
+20/03/30 16:33:33 INFO storage.MemoryStore: Block broadcast_0 stored as values in memory (estimated size 117.4 KB, free 529.9 MB)
+20/03/30 16:33:33 INFO storage.MemoryStore: ensureFreeSpace(12887) called with curMem=120176, maxMem=555755765
+20/03/30 16:33:33 INFO storage.MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 12.6 KB, free 529.9 MB)
+20/03/30 16:33:33 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.22.249.44:35970 (size: 12.6 KB, free: 530.0 MB)
+20/03/30 16:33:33 INFO spark.SparkContext: Created broadcast 0 from textFile at Histogram.scala:14
+20/03/30 16:33:34 INFO mapred.FileInputFormat: Total input paths to process : 1
+20/03/30 16:33:34 INFO spark.SparkContext: Starting job: collect at Histogram.scala:33
+20/03/30 16:33:34 INFO scheduler.DAGScheduler: Registering RDD 7 (map at Histogram.scala:26)
+20/03/30 16:33:34 INFO scheduler.DAGScheduler: Got job 0 (collect at Histogram.scala:33) with 9 output partitions
+20/03/30 16:33:34 INFO scheduler.DAGScheduler: Final stage: ResultStage 1(collect at Histogram.scala:33)
+20/03/30 16:33:34 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 0)
+20/03/30 16:33:34 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 0)
+20/03/30 16:33:34 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[7] at map at Histogram.scala:26), which has no missing parents
+20/03/30 16:33:34 INFO storage.MemoryStore: ensureFreeSpace(5752) called with curMem=133063, maxMem=555755765
+20/03/30 16:33:34 INFO storage.MemoryStore: Block broadcast_1 stored as values in memory (estimated size 5.6 KB, free 529.9 MB)
+20/03/30 16:33:34 INFO storage.MemoryStore: ensureFreeSpace(3068) called with curMem=138815, maxMem=555755765
+20/03/30 16:33:34 INFO storage.MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 3.0 KB, free 529.9 MB)
+20/03/30 16:33:34 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.22.249.44:35970 (size: 3.0 KB, free: 530.0 MB)
+20/03/30 16:33:34 INFO spark.SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:861
+20/03/30 16:33:34 INFO scheduler.DAGScheduler: Submitting 9 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[7] at map at Histogram.scala:26)
+20/03/30 16:33:34 INFO scheduler.TaskSchedulerImpl: Adding task set 0.0 with 9 tasks
+20/03/30 16:33:34 INFO cluster.SparkDeploySchedulerBackend: Registered executor: AkkaRpcEndpointRef(Actor[akka.tcp://sparkExecutor@10.22.249.33:38841/user/Executor#-665695494]) with ID 1
+20/03/30 16:33:34 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, 10.22.249.33, ANY, 2336 bytes)
+20/03/30 16:33:34 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1, 10.22.249.33, ANY, 2336 bytes)
+20/03/30 16:33:34 INFO scheduler.TaskSetManager: Starting task 2.0 in stage 0.0 (TID 2, 10.22.249.33, ANY, 2336 bytes)
+20/03/30 16:33:34 INFO scheduler.TaskSetManager: Starting task 3.0 in stage 0.0 (TID 3, 10.22.249.33, ANY, 2336 bytes)
+20/03/30 16:33:34 INFO scheduler.TaskSetManager: Starting task 4.0 in stage 0.0 (TID 4, 10.22.249.33, ANY, 2336 bytes)
+20/03/30 16:33:34 INFO scheduler.TaskSetManager: Starting task 5.0 in stage 0.0 (TID 5, 10.22.249.33, ANY, 2336 bytes)
+20/03/30 16:33:34 INFO scheduler.TaskSetManager: Starting task 6.0 in stage 0.0 (TID 6, 10.22.249.33, ANY, 2321 bytes)
+20/03/30 16:33:34 INFO scheduler.TaskSetManager: Starting task 7.0 in stage 0.0 (TID 7, 10.22.249.33, ANY, 2321 bytes)
+20/03/30 16:33:34 INFO scheduler.TaskSetManager: Starting task 8.0 in stage 0.0 (TID 8, 10.22.249.33, ANY, 2321 bytes)
+20/03/30 16:33:34 INFO cluster.SparkDeploySchedulerBackend: Registered executor: AkkaRpcEndpointRef(Actor[akka.tcp://sparkExecutor@10.22.249.44:36605/user/Executor#1089101749]) with ID 0
+20/03/30 16:33:34 INFO storage.BlockManagerMasterEndpoint: Registering block manager 10.22.249.33:45898 with 530.0 MB RAM, BlockManagerId(1, 10.22.249.33, 45898)
+20/03/30 16:33:34 INFO storage.BlockManagerMasterEndpoint: Registering block manager 10.22.249.44:38989 with 530.0 MB RAM, BlockManagerId(0, 10.22.249.44, 38989)
+20/03/30 16:33:35 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.22.249.33:45898 (size: 3.0 KB, free: 530.0 MB)
+20/03/30 16:33:35 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.22.249.33:45898 (size: 12.6 KB, free: 530.0 MB)
+20/03/30 16:33:48 INFO scheduler.TaskSetManager: Finished task 5.0 in stage 0.0 (TID 5) in 13926 ms on 10.22.249.33 (1/9)
+20/03/30 16:33:48 INFO scheduler.TaskSetManager: Finished task 8.0 in stage 0.0 (TID 8) in 14015 ms on 10.22.249.33 (2/9)
+20/03/30 16:33:48 INFO scheduler.TaskSetManager: Finished task 2.0 in stage 0.0 (TID 2) in 14124 ms on 10.22.249.33 (3/9)
+20/03/30 16:34:00 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 25782 ms on 10.22.249.33 (4/9)
+20/03/30 16:34:00 INFO scheduler.TaskSetManager: Finished task 6.0 in stage 0.0 (TID 6) in 25824 ms on 10.22.249.33 (5/9)
+20/03/30 16:34:00 INFO scheduler.TaskSetManager: Finished task 7.0 in stage 0.0 (TID 7) in 26166 ms on 10.22.249.33 (6/9)
+20/03/30 16:34:01 INFO scheduler.TaskSetManager: Finished task 4.0 in stage 0.0 (TID 4) in 26587 ms on 10.22.249.33 (7/9)
+20/03/30 16:34:01 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 26843 ms on 10.22.249.33 (8/9)
+20/03/30 16:34:02 INFO scheduler.TaskSetManager: Finished task 3.0 in stage 0.0 (TID 3) in 28236 ms on 10.22.249.33 (9/9)
+20/03/30 16:34:02 INFO scheduler.DAGScheduler: ShuffleMapStage 0 (map at Histogram.scala:26) finished in 28.799 s
+20/03/30 16:34:02 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+20/03/30 16:34:02 INFO scheduler.DAGScheduler: looking for newly runnable stages
+20/03/30 16:34:02 INFO scheduler.DAGScheduler: running: Set()
+20/03/30 16:34:02 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 1)
+20/03/30 16:34:02 INFO scheduler.DAGScheduler: failed: Set()
+20/03/30 16:34:02 INFO scheduler.DAGScheduler: Missing parents for ResultStage 1: List()
+20/03/30 16:34:02 INFO scheduler.DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[9] at map at Histogram.scala:26), which is now runnable
+20/03/30 16:34:02 INFO storage.MemoryStore: ensureFreeSpace(6376) called with curMem=141883, maxMem=555755765
+20/03/30 16:34:02 INFO storage.MemoryStore: Block broadcast_2 stored as values in memory (estimated size 6.2 KB, free 529.9 MB)
+20/03/30 16:34:02 INFO storage.MemoryStore: ensureFreeSpace(3315) called with curMem=148259, maxMem=555755765
+20/03/30 16:34:02 INFO storage.MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 3.2 KB, free 529.9 MB)
+20/03/30 16:34:02 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.22.249.44:35970 (size: 3.2 KB, free: 530.0 MB)
+20/03/30 16:34:02 INFO spark.SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:861
+20/03/30 16:34:02 INFO scheduler.DAGScheduler: Submitting 9 missing tasks from ResultStage 1 (MapPartitionsRDD[9] at map at Histogram.scala:26)
+20/03/30 16:34:02 INFO scheduler.TaskSchedulerImpl: Adding task set 1.0 with 9 tasks
+20/03/30 16:34:02 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 1.0 (TID 9, 10.22.249.33, PROCESS_LOCAL, 1955 bytes)
+20/03/30 16:34:02 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 1.0 (TID 10, 10.22.249.44, PROCESS_LOCAL, 1955 bytes)
+20/03/30 16:34:02 INFO scheduler.TaskSetManager: Starting task 2.0 in stage 1.0 (TID 11, 10.22.249.33, PROCESS_LOCAL, 1955 bytes)
+20/03/30 16:34:02 INFO scheduler.TaskSetManager: Starting task 3.0 in stage 1.0 (TID 12, 10.22.249.44, PROCESS_LOCAL, 1955 bytes)
+20/03/30 16:34:02 INFO scheduler.TaskSetManager: Starting task 4.0 in stage 1.0 (TID 13, 10.22.249.33, PROCESS_LOCAL, 1955 bytes)
+20/03/30 16:34:02 INFO scheduler.TaskSetManager: Starting task 5.0 in stage 1.0 (TID 14, 10.22.249.44, PROCESS_LOCAL, 1955 bytes)
+20/03/30 16:34:02 INFO scheduler.TaskSetManager: Starting task 6.0 in stage 1.0 (TID 15, 10.22.249.33, PROCESS_LOCAL, 1955 bytes)
+20/03/30 16:34:02 INFO scheduler.TaskSetManager: Starting task 7.0 in stage 1.0 (TID 16, 10.22.249.44, PROCESS_LOCAL, 1955 bytes)
+20/03/30 16:34:02 INFO scheduler.TaskSetManager: Starting task 8.0 in stage 1.0 (TID 17, 10.22.249.33, PROCESS_LOCAL, 1955 bytes)
+20/03/30 16:34:02 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.22.249.33:45898 (size: 3.2 KB, free: 530.0 MB)
+20/03/30 16:34:02 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.22.249.33:38841
+20/03/30 16:34:02 INFO spark.MapOutputTrackerMaster: Size of output statuses for shuffle 0 is 219 bytes
+20/03/30 16:34:03 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.22.249.44:38989 (size: 3.2 KB, free: 530.0 MB)
+20/03/30 16:34:03 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.22.249.44:36605
+20/03/30 16:34:14 INFO scheduler.TaskSetManager: Finished task 7.0 in stage 1.0 (TID 16) in 11206 ms on 10.22.249.44 (1/9)
+20/03/30 16:34:14 INFO scheduler.TaskSetManager: Finished task 5.0 in stage 1.0 (TID 14) in 11786 ms on 10.22.249.44 (2/9)
+20/03/30 16:34:15 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 1.0 (TID 10) in 12445 ms on 10.22.249.44 (3/9)
+20/03/30 16:34:15 INFO scheduler.TaskSetManager: Finished task 4.0 in stage 1.0 (TID 13) in 12473 ms on 10.22.249.33 (4/9)
+20/03/30 16:34:15 INFO scheduler.TaskSetManager: Finished task 6.0 in stage 1.0 (TID 15) in 12474 ms on 10.22.249.33 (5/9)
+20/03/30 16:34:15 INFO scheduler.TaskSetManager: Finished task 3.0 in stage 1.0 (TID 12) in 12754 ms on 10.22.249.44 (6/9)
+20/03/30 16:34:16 INFO scheduler.TaskSetManager: Finished task 8.0 in stage 1.0 (TID 17) in 13750 ms on 10.22.249.33 (7/9)
+20/03/30 16:34:17 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 1.0 (TID 9) in 14204 ms on 10.22.249.33 (8/9)
+20/03/30 16:34:17 INFO scheduler.TaskSetManager: Finished task 2.0 in stage 1.0 (TID 11) in 14444 ms on 10.22.249.33 (9/9)
+20/03/30 16:34:17 INFO scheduler.DAGScheduler: ResultStage 1 (collect at Histogram.scala:33) finished in 14.447 s
+20/03/30 16:34:17 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+20/03/30 16:34:17 INFO scheduler.DAGScheduler: Job 0 finished: collect at Histogram.scala:33, took 43.308690 s
+3	54	-14809
+1	160	-14012
+1	206	-13761
+1	202	-13812
+3	129	-13891
+1	166	-13893
+1	145	-13960
+1	213	-14057
+2	108	-13310
+3	26	-13635
+1	168	-13814
+1	64	-13649
+1	107	-13496
+1	209	-14148
+1	51	-13839
+1	35	-13875
+2	132	-13894
+2	29	-13847
+2	51	-14406
+3	63	-14230
+1	234	-13747
+2	86	-13928
+1	200	-13912
+2	207	-13591
+2	121	-13872
+1	72	-13647
+2	54	-13809
+3	0	-13941
+3	145	-13817
+3	242	-13918
+2	5	-13988
+3	171	-13695
+3	228	-13979
+1	195	-13780
+1	53	-13812
+3	191	-13529
+2	169	-14220
+1	151	-13721
+2	195	-14274
+2	126	-13753
+3	45	-13588
+3	226	-14081
+3	1	-13433
+3	150	-13800
+1	173	-14283
+1	176	-14006
+1	3	-13834
+2	210	-13969
+1	117	-14306
+1	249	-13917
+3	252	-13521
+1	215	-14043
+1	139	-13581
+1	23	-13604
+3	144	-14053
+2	82	-14003
+1	84	-14100
+1	244	-14370
+2	47	-13682
+2	232	-14023
+2	20	-13753
+3	30	-13590
+3	143	-13655
+3	20	-13789
+3	77	-13642
+3	105	-13828
+1	69	-13796
+3	99	-14166
+1	194	-13614
+1	82	-13769
+1	210	-14039
+3	201	-14202
+1	50	-14143
+1	59	-13637
+1	228	-13605
+3	39	-14275
+2	193	-13871
+1	24	-14130
+1	78	-13421
+1	113	-14244
+1	77	-13798
+3	168	-13718
+3	159	-13624
+2	154	-13832
+1	18	-13945
+3	238	-13930
+3	123	-14208
+2	52	-14179
+2	28	-13723
+2	39	-13931
+3	227	-13781
+3	237	-13864
+1	188	-13753
+3	173	-14133
+2	236	-13766
+3	47	-14044
+1	192	-14230
+1	45	-14037
+3	103	-14174
+2	111	-13784
+1	54	-13982
+2	143	-14078
+2	73	-13482
+3	18	-13952
+3	78	-14050
+2	224	-13808
+2	53	-13750
+2	197	-13659
+2	90	-14002
+3	72	-14108
+2	49	-13955
+3	95	-14101
+2	247	-13960
+3	2	-13777
+2	189	-14150
+2	63	-14096
+2	79	-13959
+2	242	-13986
+2	123	-13735
+3	128	-13893
+3	3	-13436
+1	136	-14204
+3	202	-13231
+2	205	-13386
+1	197	-14149
+2	118	-13872
+2	170	-13898
+1	114	-13851
+2	177	-13906
+2	11	-13921
+1	119	-13592
+1	73	-13707
+3	106	-14351
+1	87	-13906
+1	32	-13671
+1	100	-13420
+2	0	-13924
+2	55	-14501
+2	14	-13780
+3	94	-14201
+1	135	-14074
+2	198	-13771
+2	21	-14060
+2	78	-13844
+2	221	-13800
+3	233	-14125
+3	187	-14061
+3	193	-13675
+3	22	-14090
+1	6	-13709
+2	229	-13924
+1	161	-14082
+2	147	-14129
+1	65	-13778
+2	150	-13729
+2	113	-13688
+3	68	-14005
+1	46	-13835
+2	129	-14181
+2	25	-13592
+2	130	-13715
+3	8	-13683
+2	32	-13975
+3	102	-14034
+3	118	-13700
+1	22	-13841
+3	229	-13530
+1	238	-13802
+1	182	-14033
+2	97	-13561
+1	13	-14151
+3	76	-14019
+1	16	-13895
+2	164	-13539
+1	219	-13965
+1	66	-13945
+3	25	-13450
+3	212	-14412
+2	159	-14080
+3	163	-13823
+1	181	-13643
+3	231	-14326
+2	187	-13657
+2	211	-13951
+3	250	-13581
+1	230	-13643
+3	31	-13818
+3	156	-13961
+1	31	-13640
+1	12	-13308
+2	98	-14164
+2	59	-14062
+3	130	-13864
+1	26	-14021
+3	213	-14045
+1	159	-14001
+1	4	-13795
+1	63	-13636
+1	89	-14004
+2	152	-13776
+1	218	-13654
+3	58	-14237
+1	11	-13807
+3	203	-14029
+2	3	-13604
+3	107	-13718
+3	80	-13312
+2	245	-13765
+1	180	-14105
+3	121	-14290
+1	129	-13474
+2	163	-13744
+1	101	-13843
+1	111	-13561
+1	14	-13433
+2	38	-13918
+2	235	-13526
+2	117	-13505
+3	244	-13976
+1	27	-14264
+2	157	-14140
+2	17	-14085
+1	125	-14020
+1	34	-13892
+1	21	-14068
+2	246	-14381
+3	181	-14169
+2	179	-13461
+1	208	-14195
+2	173	-13784
+3	235	-14033
+1	184	-14031
+1	167	-13636
+1	95	-13941
+3	35	-14080
+2	186	-13790
+3	218	-13767
+2	240	-14020
+2	253	-14237
+2	101	-13552
+2	254	-13737
+3	139	-13598
+2	61	-13242
+1	49	-14295
+3	149	-14054
+1	28	-14326
+1	25	-13745
+2	139	-14142
+2	213	-13783
+2	182	-13760
+1	124	-13936
+1	190	-13761
+2	140	-13959
+2	13	-13887
+2	228	-13974
+3	116	-13874
+1	44	-13681
+3	140	-13833
+3	85	-13911
+3	158	-13946
+2	180	-13726
+3	230	-14124
+3	142	-13777
+1	171	-13601
+3	137	-14059
+1	253	-13829
+2	60	-13599
+1	177	-14218
+3	120	-13804
+1	148	-14508
+2	217	-13916
+3	174	-13840
+2	188	-13633
+3	185	-13731
+3	82	-14060
+3	33	-14201
+3	148	-13644
+1	221	-14033
+2	134	-13936
+3	19	-14068
+1	220	-13716
+2	8	-13643
+1	103	-13718
+3	119	-13573
+2	244	-14210
+1	214	-13696
+1	207	-13532
+2	104	-14059
+3	56	-13834
+1	94	-14204
+3	16	-13812
+3	52	-14017
+1	246	-13399
+2	44	-13571
+3	5	-13588
+2	153	-14163
+2	227	-13964
+1	115	-13476
+3	232	-13613
+2	4	-14150
+1	48	-13871
+3	223	-13474
+3	90	-13906
+1	2	-14018
+2	35	-13881
+3	138	-14029
+2	46	-13962
+1	175	-13491
+1	58	-13658
+3	104	-13869
+3	224	-13226
+1	104	-13746
+1	106	-13801
+1	183	-14103
+2	127	-13788
+3	38	-14037
+1	243	-13440
+3	57	-14418
+3	178	-13700
+2	119	-14016
+1	121	-14009
+2	200	-13789
+2	131	-13828
+3	91	-13564
+1	150	-13893
+1	201	-13649
+1	179	-14017
+1	36	-14204
+2	22	-13666
+1	47	-13648
+2	231	-14220
+2	135	-13516
+2	120	-14025
+2	155	-14310
+2	145	-14038
+3	55	-13652
+3	147	-13656
+1	138	-14347
+3	153	-13587
+3	61	-13776
+1	43	-13821
+2	76	-13960
+1	155	-13713
+1	252	-13891
+1	99	-13777
+1	0	-13893
+2	252	-13947
+3	246	-13866
+2	100	-13914
+1	227	-13434
+3	49	-13799
+1	248	-14097
+3	132	-13404
+3	175	-13395
+3	219	-13886
+3	88	-14238
+1	153	-14156
+2	42	-13823
+1	56	-13789
+3	92	-13798
+1	236	-13807
+3	100	-14132
+3	165	-14213
+1	245	-14165
+1	128	-13756
+1	91	-13944
+1	165	-13739
+3	151	-13773
+3	176	-14317
+3	133	-13679
+3	125	-13967
+2	165	-13894
+1	251	-14072
+3	190	-14225
+3	71	-14037
+1	93	-13595
+2	238	-13972
+3	172	-14007
+2	237	-13896
+3	234	-13763
+1	203	-13886
+2	43	-13957
+3	79	-13897
+1	211	-13685
+1	237	-13883
+2	241	-13568
+2	166	-13843
+2	203	-13985
+3	12	-13551
+1	76	-13510
+3	60	-13875
+2	81	-14317
+1	96	-13704
+1	90	-14027
+2	71	-14185
+1	122	-13906
+2	190	-13770
+3	179	-14070
+2	91	-13989
+1	98	-13714
+2	80	-13625
+2	181	-13979
+3	113	-14198
+3	253	-14300
+3	14	-13692
+3	222	-14052
+3	122	-13932
+2	174	-13817
+3	44	-13222
+1	20	-13914
+1	140	-14242
+1	174	-13887
+1	235	-13683
+3	188	-13760
+3	136	-13956
+2	85	-13526
+3	62	-14214
+2	66	-14114
+2	2	-13988
+3	184	-13465
+3	110	-13837
+1	57	-13972
+2	148	-14413
+3	32	-14323
+3	36	-14191
+3	37	-13939
+3	198	-13793
+3	50	-13632
+2	176	-14306
+2	172	-14115
+3	225	-13836
+1	88	-14066
+1	154	-14020
+2	95	-13570
+3	126	-13873
+3	40	-13875
+1	216	-13895
+3	167	-14407
+3	9	-13912
+1	37	-14099
+1	15	-14009
+3	206	-14344
+1	7	-13799
+2	114	-13748
+3	160	-13841
+1	109	-13621
+2	88	-14003
+2	146	-13786
+1	189	-13978
+3	64	-13715
+3	204	-13797
+2	65	-13515
+1	70	-13584
+3	69	-13742
+3	180	-13845
+1	112	-14094
+3	127	-13985
+2	57	-13986
+1	19	-13833
+3	17	-13396
+1	42	-14128
+2	105	-14077
+3	194	-13424
+3	214	-13647
+1	241	-13814
+1	60	-14109
+3	207	-14071
+3	109	-13833
+1	232	-13531
+3	87	-13898
+2	199	-13849
+1	229	-13410
+3	124	-14507
+3	34	-13918
+2	84	-13784
+3	115	-13741
+3	249	-13434
+1	83	-13506
+3	65	-14227
+1	40	-13786
+2	124	-13657
+1	133	-13406
+3	134	-13781
+2	19	-13881
+1	39	-14049
+2	249	-14602
+1	8	-13662
+2	239	-13860
+2	37	-13571
+2	138	-13964
+2	161	-13915
+1	131	-13732
+1	68	-14326
+1	152	-13909
+3	211	-14107
+2	196	-14167
+2	184	-13736
+1	55	-13998
+1	86	-14326
+3	70	-13815
+1	187	-14071
+2	6	-13741
+2	185	-13521
+1	205	-14042
+3	41	-13771
+3	51	-13923
+1	81	-14484
+3	4	-14125
+2	16	-13898
+2	27	-13971
+2	33	-13516
+1	156	-14089
+3	152	-13823
+3	196	-13863
+2	243	-13959
+3	170	-13825
+2	233	-13921
+2	122	-13936
+1	62	-14080
+3	216	-13852
+1	172	-13677
+1	134	-13983
+2	56	-14074
+1	79	-13685
+1	147	-14210
+2	115	-14047
+3	192	-14175
+2	204	-13493
+2	162	-13444
+3	111	-14036
+2	70	-13887
+1	110	-13663
+2	89	-14054
+3	248	-14431
+1	126	-13951
+1	170	-13541
+1	231	-14029
+1	212	-14123
+2	216	-13603
+2	192	-13666
+2	141	-13835
+1	247	-13915
+1	199	-13607
+2	209	-13844
+2	99	-13719
+1	17	-14183
+1	10	-14265
+2	230	-13991
+3	89	-13351
+2	234	-14024
+2	1	-14330
+2	36	-14095
+1	169	-13887
+1	226	-13773
+2	226	-14108
+1	92	-13953
+2	250	-14215
+2	206	-14102
+2	191	-13786
+1	127	-14095
+3	10	-13585
+3	186	-13666
+1	217	-13705
+2	116	-14135
+2	48	-13523
+1	1	-13832
+3	135	-13541
+3	27	-14126
+2	133	-13941
+3	162	-13561
+3	199	-13502
+3	240	-13720
+1	142	-13839
+3	81	-14116
+1	225	-14045
+3	46	-13616
+2	77	-14158
+2	107	-13835
+3	24	-14145
+3	131	-13689
+2	110	-13855
+3	73	-13892
+2	255	-13715
+2	225	-14179
+3	245	-13988
+2	96	-13622
+3	13	-13929
+1	67	-13804
+2	74	-13768
+3	114	-13994
+3	208	-13780
+2	12	-13527
+3	53	-13822
+1	120	-13647
+1	178	-14308
+1	132	-13761
+3	66	-13464
+1	240	-13792
+1	52	-14053
+2	202	-13900
+1	164	-13772
+2	9	-13534
+2	220	-13885
+1	102	-13756
+1	185	-14056
+2	160	-14165
+1	75	-13867
+2	178	-14069
+2	62	-13921
+2	219	-14171
+3	96	-14159
+1	162	-13648
+1	137	-14217
+2	212	-14336
+2	137	-13781
+2	194	-14111
+3	164	-13958
+3	154	-13675
+1	33	-14163
+1	163	-14096
+2	109	-13685
+3	197	-13706
+3	67	-13939
+1	61	-13930
+2	45	-13924
+2	93	-14231
+1	41	-13843
+2	94	-14288
+2	218	-14008
+1	74	-13720
+1	144	-13734
+2	112	-14334
+3	155	-13642
+3	169	-13933
+3	243	-13742
+3	43	-13892
+3	182	-14153
+1	149	-14269
+3	84	-13803
+2	167	-13722
+1	196	-13557
+1	108	-13340
+1	204	-13884
+3	220	-13528
+2	125	-13853
+1	71	-13621
+1	224	-13985
+2	168	-13752
+2	171	-14303
+3	83	-13607
+2	208	-14108
+2	151	-13993
+1	254	-14015
+2	10	-13599
+3	177	-13806
+2	223	-14265
+3	241	-13995
+3	29	-14089
+1	9	-13977
+3	74	-13724
+2	214	-13926
+1	193	-14040
+1	255	-13975
+3	28	-13445
+3	23	-13822
+3	75	-13725
+3	166	-13853
+2	41	-14049
+1	85	-14194
+1	5	-13718
+2	144	-13110
+1	38	-13934
+3	97	-14245
+2	26	-13773
+2	18	-13780
+3	98	-13716
+3	93	-13939
+2	7	-13439
+3	247	-13821
+2	34	-13851
+2	201	-13275
+1	242	-14300
+3	210	-13946
+2	248	-13915
+3	215	-13913
+3	205	-13794
+2	31	-13770
+2	92	-14201
+2	72	-14120
+2	142	-14310
+2	128	-13944
+2	68	-14006
+3	255	-14251
+1	123	-14136
+2	24	-13850
+1	222	-13910
+3	221	-13605
+2	64	-13947
+2	15	-14239
+3	251	-14017
+3	183	-13933
+2	69	-13876
+2	40	-14182
+3	21	-13699
+2	156	-13837
+2	106	-13941
+3	236	-14068
+3	189	-14108
+1	97	-13512
+1	157	-13999
+2	149	-13956
+3	6	-14201
+2	67	-13702
+1	191	-14106
+3	117	-13920
+3	141	-14153
+1	186	-14344
+3	146	-13833
+1	80	-13771
+1	116	-13609
+2	103	-13546
+1	29	-14315
+3	42	-14042
+3	11	-14012
+1	141	-14442
+1	130	-13762
+3	86	-13694
+3	239	-14324
+2	23	-13790
+3	7	-14065
+2	30	-13500
+1	30	-13933
+2	136	-13679
+3	195	-13754
+2	175	-13496
+2	75	-13899
+1	239	-13482
+2	102	-13846
+1	198	-14131
+2	58	-13815
+2	158	-13699
+1	146	-14124
+3	108	-14282
+2	87	-13426
+3	101	-14321
+2	183	-14325
+1	233	-14121
+3	161	-13831
+1	223	-13625
+3	209	-13760
+3	48	-13830
+3	200	-13930
+3	157	-13751
+2	50	-13190
+1	250	-13958
+2	215	-13712
+1	143	-13518
+3	217	-13495
+2	83	-13959
+1	158	-14074
+1	105	-13954
+2	251	-14025
+2	222	-13957
+3	112	-14070
+3	254	-14140
+3	15	-13715
+3	59	-14067
+1	118	-13635
+20/03/30 16:34:17 INFO spark.SparkContext: Invoking stop() from shutdown hook
+20/03/30 16:34:17 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+20/03/30 16:34:17 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+20/03/30 16:34:17 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/api,null}
+20/03/30 16:34:17 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/,null}
+20/03/30 16:34:17 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/static,null}
+20/03/30 16:34:17 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+20/03/30 16:34:17 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+20/03/30 16:34:17 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+20/03/30 16:34:17 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/executors,null}
+20/03/30 16:34:17 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+20/03/30 16:34:17 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/environment,null}
+20/03/30 16:34:17 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+20/03/30 16:34:17 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+20/03/30 16:34:17 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+20/03/30 16:34:17 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/storage,null}
+20/03/30 16:34:17 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+20/03/30 16:34:17 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+20/03/30 16:34:17 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+20/03/30 16:34:17 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+20/03/30 16:34:17 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+20/03/30 16:34:17 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages,null}
+20/03/30 16:34:17 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+20/03/30 16:34:17 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+20/03/30 16:34:17 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+20/03/30 16:34:17 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/jobs,null}
+20/03/30 16:34:17 INFO ui.SparkUI: Stopped Spark web UI at http://10.22.249.44:4040
+20/03/30 16:34:17 INFO scheduler.DAGScheduler: Stopping DAGScheduler
+20/03/30 16:34:17 INFO cluster.SparkDeploySchedulerBackend: Shutting down all executors
+20/03/30 16:34:17 INFO cluster.SparkDeploySchedulerBackend: Asking each executor to shut down
+20/03/30 16:34:17 INFO spark.MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+20/03/30 16:34:17 INFO storage.MemoryStore: MemoryStore cleared
+20/03/30 16:34:17 INFO storage.BlockManager: BlockManager stopped
+20/03/30 16:34:17 INFO storage.BlockManagerMaster: BlockManagerMaster stopped
+20/03/30 16:34:17 INFO scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+20/03/30 16:34:17 INFO spark.SparkContext: Successfully stopped SparkContext
+20/03/30 16:34:17 INFO util.ShutdownHookManager: Shutdown hook called
+20/03/30 16:34:17 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-dc849e5b-a978-49d0-9668-2d079827bb34
+20/03/30 16:34:17 INFO remote.RemoteActorRefProvider$RemotingTerminator: Shutting down remote daemon.
+20/03/30 16:34:17 INFO remote.RemoteActorRefProvider$RemotingTerminator: Remote daemon shut down; proceeding with flushing remote transports.
+stopping yarn daemons
+stopping resourcemanager
+comet-27-19.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+comet-27-19.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+comet-27-19.ibnet: stopping nodemanager
+comet-27-30.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+comet-27-30.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+comet-27-30.ibnet: stopping nodemanager
+no proxyserver to stop
+Stopping namenodes on [comet-27-19.ibnet]
+comet-27-19.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+comet-27-19.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+comet-27-19.ibnet: stopping namenode
+comet-27-19.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+comet-27-19.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+comet-27-19.ibnet: stopping datanode
+comet-27-30.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+comet-27-30.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+comet-27-30.ibnet: stopping datanode
+Stopping secondary namenodes [comet-27-19.ibnet]
+comet-27-19.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+comet-27-19.ibnet: /home/sxr3297/.bashrc: line 1: x#: command not found
+comet-27-19.ibnet: stopping secondarynamenode
+Copying Hadoop logs back to /home/sxr3297/cometcluster/logs...
+‘/scratch/sxr3297/32342646/logs’ -> ‘/home/sxr3297/cometcluster/logs’
+‘/scratch/sxr3297/32342646/logs/spark-sxr3297-org.apache.spark.deploy.master.Master-1-comet-27-19.out’ -> ‘/home/sxr3297/cometcluster/logs/spark-sxr3297-org.apache.spark.deploy.master.Master-1-comet-27-19.out’
+‘/scratch/sxr3297/32342646/logs/yarn-sxr3297-resourcemanager-comet-27-19.log’ -> ‘/home/sxr3297/cometcluster/logs/yarn-sxr3297-resourcemanager-comet-27-19.log’
+‘/scratch/sxr3297/32342646/logs/yarn-sxr3297-nodemanager-comet-27-19.sdsc.edu.out’ -> ‘/home/sxr3297/cometcluster/logs/yarn-sxr3297-nodemanager-comet-27-19.sdsc.edu.out’
+‘/scratch/sxr3297/32342646/logs/hadoop-sxr3297-datanode-comet-27-19.sdsc.edu.out’ -> ‘/home/sxr3297/cometcluster/logs/hadoop-sxr3297-datanode-comet-27-19.sdsc.edu.out’
+‘/scratch/sxr3297/32342646/logs/hadoop-sxr3297-secondarynamenode-comet-27-19.sdsc.edu.log’ -> ‘/home/sxr3297/cometcluster/logs/hadoop-sxr3297-secondarynamenode-comet-27-19.sdsc.edu.log’
+‘/scratch/sxr3297/32342646/logs/hadoop-sxr3297-namenode-comet-27-19.sdsc.edu.out’ -> ‘/home/sxr3297/cometcluster/logs/hadoop-sxr3297-namenode-comet-27-19.sdsc.edu.out’
+‘/scratch/sxr3297/32342646/logs/userlogs’ -> ‘/home/sxr3297/cometcluster/logs/userlogs’
+‘/scratch/sxr3297/32342646/logs/hadoop-sxr3297-namenode-comet-27-19.sdsc.edu.log’ -> ‘/home/sxr3297/cometcluster/logs/hadoop-sxr3297-namenode-comet-27-19.sdsc.edu.log’
+‘/scratch/sxr3297/32342646/logs/spark-sxr3297-org.apache.spark.deploy.worker.Worker-1-comet-27-19.sdsc.edu.out’ -> ‘/home/sxr3297/cometcluster/logs/spark-sxr3297-org.apache.spark.deploy.worker.Worker-1-comet-27-19.sdsc.edu.out’
+‘/scratch/sxr3297/32342646/logs/hadoop-sxr3297-secondarynamenode-comet-27-19.sdsc.edu.out’ -> ‘/home/sxr3297/cometcluster/logs/hadoop-sxr3297-secondarynamenode-comet-27-19.sdsc.edu.out’
+‘/scratch/sxr3297/32342646/logs/SecurityAuth-sxr3297.audit’ -> ‘/home/sxr3297/cometcluster/logs/SecurityAuth-sxr3297.audit’
+‘/scratch/sxr3297/32342646/logs/yarn-sxr3297-nodemanager-comet-27-19.sdsc.edu.log’ -> ‘/home/sxr3297/cometcluster/logs/yarn-sxr3297-nodemanager-comet-27-19.sdsc.edu.log’
+‘/scratch/sxr3297/32342646/logs/yarn-sxr3297-resourcemanager-comet-27-19.out’ -> ‘/home/sxr3297/cometcluster/logs/yarn-sxr3297-resourcemanager-comet-27-19.out’
+‘/scratch/sxr3297/32342646/logs/hadoop-sxr3297-datanode-comet-27-19.sdsc.edu.log’ -> ‘/home/sxr3297/cometcluster/logs/hadoop-sxr3297-datanode-comet-27-19.sdsc.edu.log’
+/home/sxr3297/.bashrc: line 1: x#: command not found
+removed directory: ‘/scratch/sxr3297/32342646/mapred_scratch/nmPrivate’
+removed directory: ‘/scratch/sxr3297/32342646/mapred_scratch/usercache’
+removed directory: ‘/scratch/sxr3297/32342646/mapred_scratch/filecache’
+removed directory: ‘/scratch/sxr3297/32342646/mapred_scratch’
+removed ‘/scratch/sxr3297/32342646/tmp/dfs/namesecondary/current/fsimage_0000000000000000000’
+removed ‘/scratch/sxr3297/32342646/tmp/dfs/namesecondary/current/edits_0000000000000000001-0000000000000000016’
+removed ‘/scratch/sxr3297/32342646/tmp/dfs/namesecondary/current/VERSION’
+removed ‘/scratch/sxr3297/32342646/tmp/dfs/namesecondary/current/fsimage_0000000000000000016’
+removed ‘/scratch/sxr3297/32342646/tmp/dfs/namesecondary/current/fsimage_0000000000000000000.md5’
+removed ‘/scratch/sxr3297/32342646/tmp/dfs/namesecondary/current/fsimage_0000000000000000016.md5’
+removed directory: ‘/scratch/sxr3297/32342646/tmp/dfs/namesecondary/current’
+removed directory: ‘/scratch/sxr3297/32342646/tmp/dfs/namesecondary’
+removed directory: ‘/scratch/sxr3297/32342646/tmp/dfs’
+removed directory: ‘/scratch/sxr3297/32342646/tmp’
+removed ‘/scratch/sxr3297/32342646/namenode_data/current/VERSION’
+removed ‘/scratch/sxr3297/32342646/namenode_data/current/fsimage_0000000000000000016’
+removed ‘/scratch/sxr3297/32342646/namenode_data/current/fsimage_0000000000000000000’
+removed ‘/scratch/sxr3297/32342646/namenode_data/current/fsimage_0000000000000000000.md5’
+removed ‘/scratch/sxr3297/32342646/namenode_data/current/edits_inprogress_0000000000000000017’
+removed ‘/scratch/sxr3297/32342646/namenode_data/current/fsimage_0000000000000000016.md5’
+removed ‘/scratch/sxr3297/32342646/namenode_data/current/edits_0000000000000000001-0000000000000000016’
+removed ‘/scratch/sxr3297/32342646/namenode_data/current/seen_txid’
+removed directory: ‘/scratch/sxr3297/32342646/namenode_data/current’
+removed directory: ‘/scratch/sxr3297/32342646/namenode_data’
+removed ‘/scratch/sxr3297/32342646/hdfs_data/current/VERSION’
+removed ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/dncp_block_verification.log.prev’
+removed directory: ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/tmp’
+removed ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/current/finalized/subdir0/subdir0/blk_1073741826_1002.meta’
+removed ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/current/finalized/subdir0/subdir0/blk_1073741827_1003.meta’
+removed ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/current/finalized/subdir0/subdir0/blk_1073741827’
+removed ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/current/finalized/subdir0/subdir0/blk_1073741825’
+removed ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/current/finalized/subdir0/subdir0/blk_1073741825_1001.meta’
+removed ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/current/finalized/subdir0/subdir0/blk_1073741826’
+removed directory: ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/current/finalized/subdir0/subdir0’
+removed directory: ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/current/finalized/subdir0’
+removed directory: ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/current/finalized’
+removed ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/current/dfsUsed’
+removed ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/current/VERSION’
+removed directory: ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/current/rbw’
+removed directory: ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/current’
+removed ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/dncp_block_verification.log.curr’
+removed directory: ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211’
+removed directory: ‘/scratch/sxr3297/32342646/hdfs_data/current’
+removed directory: ‘/scratch/sxr3297/32342646/hdfs_data’
+removed directory: ‘/scratch/sxr3297/32342646/pids’
+removed ‘/scratch/sxr3297/32342646/logs/spark-sxr3297-org.apache.spark.deploy.master.Master-1-comet-27-19.out’
+removed ‘/scratch/sxr3297/32342646/logs/yarn-sxr3297-resourcemanager-comet-27-19.log’
+removed ‘/scratch/sxr3297/32342646/logs/yarn-sxr3297-nodemanager-comet-27-19.sdsc.edu.out’
+removed ‘/scratch/sxr3297/32342646/logs/hadoop-sxr3297-datanode-comet-27-19.sdsc.edu.out’
+removed ‘/scratch/sxr3297/32342646/logs/hadoop-sxr3297-secondarynamenode-comet-27-19.sdsc.edu.log’
+removed ‘/scratch/sxr3297/32342646/logs/hadoop-sxr3297-namenode-comet-27-19.sdsc.edu.out’
+removed directory: ‘/scratch/sxr3297/32342646/logs/userlogs’
+removed ‘/scratch/sxr3297/32342646/logs/hadoop-sxr3297-namenode-comet-27-19.sdsc.edu.log’
+removed ‘/scratch/sxr3297/32342646/logs/spark-sxr3297-org.apache.spark.deploy.worker.Worker-1-comet-27-19.sdsc.edu.out’
+removed ‘/scratch/sxr3297/32342646/logs/hadoop-sxr3297-secondarynamenode-comet-27-19.sdsc.edu.out’
+removed ‘/scratch/sxr3297/32342646/logs/SecurityAuth-sxr3297.audit’
+removed ‘/scratch/sxr3297/32342646/logs/yarn-sxr3297-nodemanager-comet-27-19.sdsc.edu.log’
+removed ‘/scratch/sxr3297/32342646/logs/yarn-sxr3297-resourcemanager-comet-27-19.out’
+removed ‘/scratch/sxr3297/32342646/logs/hadoop-sxr3297-datanode-comet-27-19.sdsc.edu.log’
+removed directory: ‘/scratch/sxr3297/32342646/logs’
+/home/sxr3297/.bashrc: line 1: x#: command not found
+removed directory: ‘/scratch/sxr3297/32342646/mapred_scratch/filecache’
+removed directory: ‘/scratch/sxr3297/32342646/mapred_scratch/usercache’
+removed directory: ‘/scratch/sxr3297/32342646/mapred_scratch/nmPrivate’
+removed directory: ‘/scratch/sxr3297/32342646/mapred_scratch’
+removed directory: ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/tmp’
+removed ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/dncp_block_verification.log.prev’
+removed ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/current/dfsUsed’
+removed directory: ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/current/rbw’
+removed ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/current/VERSION’
+removed ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/current/finalized/subdir0/subdir0/blk_1073741825_1001.meta’
+removed ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/current/finalized/subdir0/subdir0/blk_1073741827’
+removed ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/current/finalized/subdir0/subdir0/blk_1073741826’
+removed ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/current/finalized/subdir0/subdir0/blk_1073741826_1002.meta’
+removed ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/current/finalized/subdir0/subdir0/blk_1073741827_1003.meta’
+removed ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/current/finalized/subdir0/subdir0/blk_1073741825’
+removed directory: ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/current/finalized/subdir0/subdir0’
+removed directory: ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/current/finalized/subdir0’
+removed directory: ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/current/finalized’
+removed directory: ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/current’
+removed ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211/dncp_block_verification.log.curr’
+removed directory: ‘/scratch/sxr3297/32342646/hdfs_data/current/BP-56469781-198.202.117.195-1585611179211’
+removed ‘/scratch/sxr3297/32342646/hdfs_data/current/VERSION’
+removed directory: ‘/scratch/sxr3297/32342646/hdfs_data/current’
+removed directory: ‘/scratch/sxr3297/32342646/hdfs_data’
+removed directory: ‘/scratch/sxr3297/32342646/pids’
+removed ‘/scratch/sxr3297/32342646/logs/hadoop-sxr3297-datanode-comet-27-30.sdsc.edu.out’
+removed ‘/scratch/sxr3297/32342646/logs/yarn-sxr3297-nodemanager-comet-27-30.sdsc.edu.log’
+removed directory: ‘/scratch/sxr3297/32342646/logs/userlogs’
+removed ‘/scratch/sxr3297/32342646/logs/SecurityAuth-sxr3297.audit’
+removed ‘/scratch/sxr3297/32342646/logs/spark-sxr3297-org.apache.spark.deploy.worker.Worker-1-comet-27-30.sdsc.edu.out’
+removed ‘/scratch/sxr3297/32342646/logs/hadoop-sxr3297-datanode-comet-27-30.sdsc.edu.log’
+removed ‘/scratch/sxr3297/32342646/logs/yarn-sxr3297-nodemanager-comet-27-30.sdsc.edu.out’
+removed directory: ‘/scratch/sxr3297/32342646/logs’
+removed directory: ‘/tmp/Jetty_comet.27.19_ibnet_50090_secondary____.tv5w9m/.active’
+removed directory: ‘/tmp/Jetty_comet.27.19_ibnet_50090_secondary____.tv5w9m/jsp’
+removed directory: ‘/tmp/Jetty_comet.27.19_ibnet_50090_secondary____.tv5w9m’
+removed directory: ‘/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08/.active’
+removed directory: ‘/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08/jsp’
+removed directory: ‘/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08’
+removed directory: ‘/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq/.active’
+removed directory: ‘/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq/jsp’
+removed directory: ‘/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq’
