@@ -1,0 +1,331 @@
+which: no hbase in (/opt/hadoop/2.6.0/sbin:/opt/hadoop/contrib/myHadoop/bin:/opt/hadoop/2.6.0/bin:/opt/mvapich2/intel/ib/bin:/opt/intel/2018.1.163/compilers_and_libraries_2018.1.163/linux/bin/intel64:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/sdsc/bin:/opt/sdsc/sbin:/opt/ibutils/bin:/opt/pdsh/bin:/opt/rocks/bin:/opt/rocks/sbin:/home/sxr3297/bin)
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/oasis/projects/nsf/uot143/fegaras/apache-hive-2.1.0-bin/lib/log4j-slf4j-impl-2.4.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hadoop/2.6.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/oasis/projects/nsf/uot143/fegaras/apache-hive-2.1.0-bin/lib/hive-common-2.1.0.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 5.821 seconds
+OK
+Time taken: 0.85 seconds
+Loading data to table default.colors
+OK
+Time taken: 0.608 seconds
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
+Query ID = sxr3297_20200424110133_96a98cc0-2717-4ff9-9aae-0bcdbec91933
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Job running in-process (local Hadoop)
+2020-04-24 11:01:44,950 Stage-1 map = 100%,  reduce = 0%
+2020-04-24 11:01:45,957 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_local2029220505_0001
+MapReduce Jobs Launched: 
+Stage-Stage-1:  HDFS Read: 0 HDFS Write: 0 SUCCESS
+Total MapReduce CPU Time Spent: 0 msec
+OK
+1	2	2
+1	4	1
+1	5	1
+1	16	1
+1	17	2
+1	23	1
+1	27	1
+1	29	1
+1	30	1
+1	33	1
+1	37	2
+1	39	1
+1	42	1
+1	47	1
+1	48	2
+1	49	3
+1	57	1
+1	58	1
+1	61	1
+1	62	1
+1	63	1
+1	64	1
+1	69	1
+1	70	1
+1	71	1
+1	72	2
+1	76	1
+1	79	2
+1	80	1
+1	81	1
+1	83	1
+1	86	1
+1	88	1
+1	90	3
+1	99	1
+1	100	1
+1	101	1
+1	102	1
+1	107	1
+1	114	1
+1	116	1
+1	120	1
+1	121	1
+1	122	2
+1	123	1
+1	127	1
+1	129	1
+1	130	1
+1	131	1
+1	132	1
+1	135	1
+1	136	1
+1	137	1
+1	141	1
+1	142	1
+1	146	1
+1	153	2
+1	154	1
+1	155	1
+1	156	1
+1	157	1
+1	163	1
+1	167	1
+1	176	1
+1	189	1
+1	191	1
+1	194	1
+1	195	1
+1	202	1
+1	207	1
+1	208	1
+1	211	2
+1	213	1
+1	214	1
+1	221	1
+1	222	2
+1	228	1
+1	234	1
+1	236	1
+1	238	1
+1	239	1
+1	243	1
+1	245	1
+1	247	1
+1	250	1
+1	252	1
+Time taken: 4.985 seconds, Fetched: 86 row(s)
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
+Query ID = sxr3297_20200424110133_96a98cc0-2717-4ff9-9aae-0bcdbec91933
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Job running in-process (local Hadoop)
+2020-04-24 11:01:48,104 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_local1296227692_0002
+MapReduce Jobs Launched: 
+Stage-Stage-1:  HDFS Read: 0 HDFS Write: 0 SUCCESS
+Total MapReduce CPU Time Spent: 0 msec
+OK
+2	5	1
+2	10	1
+2	12	1
+2	14	1
+2	16	1
+2	17	2
+2	18	1
+2	24	1
+2	25	1
+2	31	1
+2	34	1
+2	38	1
+2	39	1
+2	41	1
+2	48	2
+2	51	1
+2	52	2
+2	53	1
+2	57	1
+2	58	1
+2	59	1
+2	61	1
+2	62	3
+2	64	1
+2	67	1
+2	71	1
+2	72	1
+2	73	2
+2	76	1
+2	78	1
+2	79	1
+2	81	1
+2	84	1
+2	88	1
+2	92	2
+2	96	1
+2	98	2
+2	101	1
+2	103	1
+2	105	1
+2	106	1
+2	113	1
+2	114	1
+2	118	1
+2	120	1
+2	123	1
+2	125	2
+2	127	1
+2	128	1
+2	130	1
+2	131	1
+2	138	1
+2	141	1
+2	146	1
+2	151	1
+2	154	1
+2	158	1
+2	161	1
+2	168	1
+2	169	1
+2	170	1
+2	171	1
+2	180	1
+2	187	1
+2	192	1
+2	193	1
+2	197	1
+2	202	1
+2	205	1
+2	208	1
+2	211	1
+2	218	2
+2	223	1
+2	224	1
+2	226	1
+2	227	1
+2	228	2
+2	229	1
+2	236	1
+2	237	3
+2	241	1
+2	243	2
+2	245	2
+2	247	1
+2	254	1
+Time taken: 2.079 seconds, Fetched: 85 row(s)
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
+Query ID = sxr3297_20200424110133_96a98cc0-2717-4ff9-9aae-0bcdbec91933
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Job running in-process (local Hadoop)
+2020-04-24 11:01:50,168 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_local1192170202_0003
+MapReduce Jobs Launched: 
+Stage-Stage-1:  HDFS Read: 0 HDFS Write: 0 SUCCESS
+Total MapReduce CPU Time Spent: 0 msec
+OK
+3	0	1
+3	2	2
+3	4	1
+3	14	1
+3	15	2
+3	16	1
+3	17	1
+3	18	1
+3	21	1
+3	23	1
+3	26	2
+3	32	2
+3	35	1
+3	36	1
+3	37	1
+3	40	1
+3	41	1
+3	43	1
+3	47	1
+3	53	1
+3	54	1
+3	58	1
+3	59	1
+3	67	1
+3	68	1
+3	69	1
+3	70	1
+3	72	1
+3	73	1
+3	74	1
+3	83	1
+3	84	1
+3	88	1
+3	92	1
+3	99	1
+3	102	1
+3	104	1
+3	105	1
+3	108	1
+3	109	1
+3	112	1
+3	114	1
+3	115	1
+3	116	1
+3	118	2
+3	122	1
+3	124	1
+3	126	1
+3	132	1
+3	133	1
+3	137	1
+3	140	1
+3	144	1
+3	145	1
+3	146	1
+3	148	3
+3	149	1
+3	157	1
+3	162	2
+3	163	1
+3	165	1
+3	169	1
+3	170	1
+3	172	1
+3	175	1
+3	176	1
+3	178	2
+3	181	2
+3	188	1
+3	194	1
+3	195	1
+3	197	1
+3	202	1
+3	214	1
+3	217	1
+3	222	3
+3	224	1
+3	225	1
+3	235	1
+3	236	1
+3	239	1
+3	243	1
+3	245	1
+3	249	1
+3	251	1
+3	252	1
+3	255	2
+Time taken: 2.037 seconds, Fetched: 87 row(s)
